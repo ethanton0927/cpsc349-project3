@@ -1,5 +1,11 @@
-"name": "cpsc349-project3",
-"scripts": {
-    "start": "browser-sync start --server --startPath /index.html --files '*.html,*.css,*.js'"
-
+{
+  "name": "cpsc349-project3",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "browser-sync start --server --startPath /index.html --files '*.html,*.css,*.js'",
+    "test": "standard && vnu --skip-non-html --Werror *.html"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
 }
