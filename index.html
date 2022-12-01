@@ -5,11 +5,9 @@
     <meta charset="utf-8">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css">
-    <link rel="stylesheet" href="titles.css">
 </head>
 
 <body>
-    
     <header>
         <h1>Welcome to Rock, Paper, Scissors</h1>
         <p>Here you can play Rock Paper Scissors see how many times you can win against the computer</p>
@@ -17,15 +15,15 @@
 
     <main>
         <p>Player Score</p>
-        <p>Wins: 0</p>
-        <p>Loses: 0</p>
+        <p>Wins: <span id="playerWinsScore">0</span></p>
+        <p>Loses: <span id="playerLossesScore">0</span></p>
         <p>Challenge the computer</p>
-        <button type="button">Rock</button>
-        <button type="button">Paper</button>
-        <button type="button">Scissors</button>
+        <button id="rockBtn" type="button">Rock</button>
+        <button id="paperBtn" type="button">Paper</button>
+        <button id="scissorsBtn" type="button">Scissors</button>
     </main>
 
-    <script type="module" src="comments.js"></script>
+    <script type="module" src="./index.js"></script>
     <footer>
         <p>Created By:</p>
         <p>Name</p>
