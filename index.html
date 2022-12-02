@@ -8,53 +8,55 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="h-screen flex flex-col justify-center items-center">
-    <header class="w-screen flex flex-col justify-center items-center fixed top-0">
-        <nav class="bg-stone-200 w-screen flex flex-col justify-center items-center">
-            <h1 class="text-5xl py-8 font-bold">Rock Paper Scissors!</h1>
-            <p class="py-5">Here you can play Rock Paper Scissors see how many times you can win against the computer!</p>
-        </nav>
-        <div class="flex gap-5 py-5">
-            <p class="text-xl">Wins: <span id="wins">[WINS]</span></p>
-            <p class="text-xl">Loses: <span id="loses">[LOSSES]</span></p>
-        </div>
+<body class="h-screen flex flex-col justify-between items-center ">
+
+    <header class="bg-sky-500 w-screen flex flex-col justify-center items-center rounded-b-3xl text-white">
+        <h1 class="text-5xl font-extrabold">ROCK PAPER KNIFE!</h1>
+        <p class="py-5 font-semibold">Here you can play Rock Paper Knife see how many times you can win against the computer!</p>
     </header>
 
-    <main class="h-2/5 flex flex-col justify-between items-center gap-12">
+    <main class=" flex flex-col justify-between items-center gap-12 z-10">
         <!-- RESULTS -->
-        <div class=" flex flex-col justify-center items-center py-5">
-            <h1 id="result" class="text-4xl font-semibold">TIE</h1>
+        
+        <div class=" flex flex-col justify-center items-center py-5 gap-12">
+            <h1 id="result" class="text-4xl font-extrabold">TIE</h1>
             <div class="flex gap-20">
-                <div class="w-80 flex flex-col justify-center items-center <span id="playerWinsScore">gap-4">
-                    <h3 class="text-2xl">COMPUTER'S MOVE</span></h3>
+                <div class="w-80 flex flex-col justify-center items-center gap-4">
+                    <h3 class="text-2xl font-semibold">COMPUTER'S MOVE</span></h3>    
                     <h1 class="text-8xl" id="computer_move">🗿</h1>
                 </div>
-                <div class="w-80 flex flex-col justify-center items-center <span id="playerLossesScore">gap-4">
-                    <h3 class="text-2xl">YOUR MOVE</span></h3>
+                <div class="w-80 flex flex-col justify-center items-center gap-4">
+                    <h3 class="text-2xl font-semibold">YOUR MOVE</span></h3>
                     <h1 class="text-8xl" id="player_move">🗿</h1>
                 </div>
             </div>
         </div>
         <!-- PLAYER MOVES -->
-        <div class="bg-slate-500 flex flex-col gap-3 rounded-lg p-4">
-            <p class="text-lg flex justify-center items-center text-gray-50 font-medium">choose your next move</p>
+        <div class="bg-sky-500 flex flex-col gap-3 rounded-lg p-4">
+            <p class="text-lg flex justify-center items-center text-gray-50 font-semibold">choose your next move</p>
             <div class="flex justify-center items-center gap-5 p-5">
                 <button id="rockBtn" type="button" class="text-4xl">🗿</button>
                 <button id="paperBtn" type="button" class="text-4xl">📃</button>
-                <button id="scissorsBtn" type="button" class="text-4xl">✂</button>
+                <button id="scissorsBtn" type="button" class="text-4xl">🔪</button>
             </div>
         </div>
     </main>
 
     <script type="module" src="./index.js"></script>
-    <footer>
-        <p>Created By:</p>
-        <ul class="flex gap-3">
-            <li>Name,</li>
-            <li>Name,</li>
-            <li>Name,</li>
-            <li>Alan Cortez</li>
-        </ul>
+    <footer class="bg-sky-500 w-screen py-0.5 flex justify-around items-center z-0 rounded-t-3xl text-white font-bold">
+        <div class="flex justify-center items-center">
+            <p class="w-fit pr-2">Created By:</p>
+            <ul class="flex gap-2">
+                <li class="w-fit">Yahya Nashawati,</li>
+                <li class="w-fit">Joel Anil John,</li>
+                <li class="w-fit">Ethan Ton,</li>
+                <li class="w-fit">Alan Cortez</li>
+            </ul>
+        </div>
+        <div class="flex gap-5 py-5">
+            <p class="text-xl w-fit">Wins: <span id="wins">[WINS]</span></p>
+            <p class="text-xl w-fit">Loses: <span id="loses">[LOSSES]</span></p>
+        </div>
     </footer>
 
     <script type="module" src="index.js"></script>

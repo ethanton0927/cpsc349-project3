@@ -32,7 +32,7 @@ function handleUserInput(userValue){
     if(userValue=="rock"){
         document.getElementById("player_move").innerHTML = "🗿";
     } else if(userValue=="scissors"){
-        document.getElementById("player_move").innerHTML = "✂";
+        document.getElementById("player_move").innerHTML = "🔪";
     } else if(userValue=="paper"){
         document.getElementById("player_move").innerHTML = "📃";
     }
@@ -46,7 +46,7 @@ function handleUserInput(userValue){
     if(computerValue=="rock"){
         document.getElementById("computer_move").innerHTML = "🗿";
     } else if(computerValue=="scissors"){
-        document.getElementById("computer_move").innerHTML = "✂";
+        document.getElementById("computer_move").innerHTML = "🔪";
     } else if(computerValue=="paper"){
         document.getElementById("computer_move").innerHTML = "📃";
     }
